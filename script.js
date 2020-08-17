@@ -35,7 +35,7 @@ function getData() {
         url: queryURL,
         method: "GET"
     }).then(function (response) {
-        // using moment to craft the date
+        // using moment to find the correct date
         var date = moment().format(" MM/DD/YYYY");
         // takes the icon code from the response and assigns it to iconCode
         var iconCode = response.weather[0].icon;
